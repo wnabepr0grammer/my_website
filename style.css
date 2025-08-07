@@ -72,15 +72,16 @@ footer {
 }
 
 .profile-pic {
-  max-width: 100px;
+  max-width: 120px;
   height: auto;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #007acc;
+  border: 3px solid #9A0000;
 }
 
 .intro-text {
   max-width: 600px;
 }
+
 
 
