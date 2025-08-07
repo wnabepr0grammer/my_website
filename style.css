@@ -61,12 +61,25 @@ footer {
 
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* space between image and text */
+  padding: 1rem;
+  text-align: left;
+  justify-content: center;
+  flex-wrap: wrap; /* helps on smaller screens */
+}
+
 .profile-pic {
   width: 120px;
   height: 120px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #EEFBAA;
-  margin-bottom: 1rem;
+}
+
+.intro-text {
+  max-width: 600px;
 }
 
