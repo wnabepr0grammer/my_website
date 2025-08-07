@@ -6,6 +6,10 @@ body {
   padding: 0;
 }
 
+header h1 {
+  color: #FEFEFE;
+}
+
 header {
   background-color: #222;
   color: #fff;
@@ -52,4 +56,5 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+
 }
