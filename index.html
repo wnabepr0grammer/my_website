@@ -7,7 +7,11 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
- <header class="header-container">
+ <header class="header-container" style="position:relative;z-index:2;">
+    <div class="about-intro-crossover">
+      <h2 class="about-crossover-title">About Me</h2>
+      I am a dedicated IT professional from Latvia with experience in system administration, quality assurance, and technical support. I’ve worked on various tasks from troubleshooting to testing high-profile multimedia applications.
+    </div>
     <img src="jeypeg.jpeg" alt="Me" class="profile-pic" />
     <div class="intro-text">
       <h1>Davis Blaze</h1>
@@ -15,69 +19,141 @@
     </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a dedicated IT professional from Latvia with experience in system administration, quality assurance, and technical support. I’ve worked on various tasks from troubleshooting to testing high-profile multimedia applications.</p>
-  </section>
+  <div class="main-flex">
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="job job-flex">
+        <div class="job-skills-box">
+          <h4>Key Skills</h4>
+          <ul>
+            <li>Windows Server & Active Directory</li>
+            <li>Technical Support</li>
+            <li>Computer Networking</li>
+          </ul>
+        </div>
+        <div class="job-desc">
+          <h3>Computer System Administrator</h3>
+          <p><strong><a href="https://digitalaiscentrs.lv/">Ventspils Digital Center</a></strong> – Latvia</p>
+          <ul><p>2023 - 2024</p></ul>
+          <ul>
+            <li>Handled damage reports and change requests, consulting users via platforms, phone, and in person.</li>
+            <li>Performed remote diagnostics and troubleshooting of technical issues.</li>
+            <li>Maintained workstations and office equipment.</li>
+            <li>Managed Active Directory accounts and system updates.</li>
+          </ul>
+        </div>
+      </div>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="job">
-      <h3>Computer System Administrator</h3>
-      <p><strong><a href="https://digitalaiscentrs.lv/">Ventspils Digital Center</a></strong> – Latvia</p>
-      <ul><p>2023 - 2024</p></ul>
-      <ul>
-        <li>Handled damage reports and change requests, consulting users via platforms, phone, and in person.</li>
-        <li>Performed remote diagnostics and troubleshooting of technical issues.</li>
-        <li>Maintained workstations and office equipment.</li>
-        <li>Managed Active Directory accounts and system updates.</li>
-      </ul>
+      <div class="job job-flex">
+        <div class="job-skills-box">
+          <h4>Key Skills</h4>
+          <ul>
+            <li>Software Testing (Manual)</li>
+            <li>Technical Support</li>
+          </ul>
+        </div>
+        <div class="job-desc">
+          <h3>Quality Assurance Engineer</h3>
+          <p><strong><a href="https://www.testdevlab.com/">TestDevLab</a></strong> – Latvia</p>
+          <ul><p>2021 - 2023</p></ul>
+          <ul>
+            <li>Created test plans and provided feedback on bugs and issues.</li>
+            <li>Conducted software testing and suggested improvements.</li>
+            <li>Worked on high-profile projects focused on audio/video quality testing.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job job-flex">
+        <div class="job-skills-box">
+          <h4>Key Skills</h4>
+          <ul>
+            <li>3D Modeling & Video Editing</li>
+            <li>MS Office 365</li>
+            <li>Computer Networking</li>
+          </ul>
+        </div>
+        <div class="job-desc">
+          <h3><a href="https://www.ventspilstehnikums.lv/">Intern – Ventspils Technical School</a></h3>
+          <p><strong>Latvia</strong></p>
+          <ul><p>2016 - 2020</p></ul>
+          <ul>
+            <li>Installed and configured computer networks.</li>
+            <li>Handled data analysis using MS Office 365.</li>
+            <li>Worked with 3D modeling, video editing, and PC maintenance.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job job-flex">
+        <div class="job-skills-box">
+          <h4>Key Skills</h4>
+          <ul>
+            <li>Computer Networking</li>
+            <li>Technical Support</li>
+          </ul>
+        </div>
+        <div class="job-desc">
+          <h3><a href="https://www.vatp.lv/en/home">Intern – High Technology Park</a></h3>
+          <p><strong>Latvia</strong></p>
+          <ul><p>2017 - 2018</p></ul>
+          <ul>
+            <li>Managed computer systems</li>
+            <li>Contributed to improving network infrastructure</li>
+            <li>Resolving various computer system-related issues</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Removed Skills & Technologies section -->
+  </div>
+
+  <!-- Timeline Section -->
+  <section id="timeline" aria-labelledby="timeline-heading">
+    <h2 id="timeline-heading">Career Timeline</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">2023 - 2024</div>
+        <div class="timeline-lane">
+          <div class="timeline-dot"></div>
+        </div>
+        <div class="timeline-content">
+          <strong>Computer System Administrator – Ventspils Digital Center</strong><br>
+          Damage reports, diagnostics, troubleshooting, AD management, system updates.
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2021 - 2023</div>
+        <div class="timeline-lane">
+          <div class="timeline-dot"></div>
+        </div>
+        <div class="timeline-content">
+          <strong>Quality Assurance Engineer – TestDevLab</strong><br>
+          Test plans, bug feedback, software testing, audio/video quality projects.
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2017 - 2018</div>
+        <div class="timeline-lane">
+          <div class="timeline-dot"></div>
+        </div>
+        <div class="timeline-content">
+          <strong>Intern – High Technology Park</strong><br>
+          Managed computer systems, improved network infrastructure, resolved system issues.
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2016 - 2020</div>
+        <div class="timeline-lane">
+          <div class="timeline-dot"></div>
+        </div>
+        <div class="timeline-content">
+          <strong>Intern – Ventspils Technical School</strong><br>
+          Installed and configured computer networks, data analysis, 3D modeling, video editing, PC maintenance.
+        </div>
+      </div>
     </div>
-
-    <div class="job">
-      <h3>Quality Assurance Engineer</h3>
-      <p><strong><a href="https://www.testdevlab.com/">TestDevLab</a></strong> – Latvia</p>
-      <ul><p>2021 - 2023</p></ul>
-      <ul>
-        <li>Created test plans and provided feedback on bugs and issues.</li>
-        <li>Conducted software testing and suggested improvements.</li>
-        <li>Worked on high-profile projects focused on audio/video quality testing.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <h3><a href="https://www.ventspilstehnikums.lv/">Intern – Ventspils Technical School</a></h3>
-      <p><strong>Latvia</strong></p>
-      <ul><p>2016 - 2020</p></ul>
-      <ul>
-        <li>Installed and configured computer networks.</li>
-        <li>Handled data analysis using MS Office 365.</li>
-        <li>Worked with 3D modeling, video editing, and PC maintenance.</li>
-      </ul>
-    </div>
-
-     <div class="job">
-      <h3><a href="https://www.vatp.lv/en/home">Intern – High Technology Park</a></h3>
-      <p><strong>Latvia</strong></p>
-      <ul><p>2017 - 2018</p></ul>
-      <ul>
-        <li>Managed computer systems</li>
-        <li>Contributed to improving network infrastructure</li>
-        <li>Resolving various computer system-related issues</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="skills">
-    <h2>Skills & Technologies</h2>
-    <ul class="skills-list">
-      <li>Windows Server & Active Directory</li>
-      <li>Software Testing (Manual)</li>
-      <li>Technical Support</li>
-      <li>Computer Networking</li>
-      <li>3D Modeling & Video Editing</li>
-      <li>MS Office 365</li>
-    </ul>
   </section>
 
   <section id="contact">
@@ -94,7 +170,6 @@
 </body>
 
 </html>
-
 
 
 
