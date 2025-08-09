@@ -15,7 +15,7 @@ header {
 }
 
 header h1 {
-  color: #FEFEFE;
+  color: #f4a261;
 
 }
   
@@ -84,27 +84,21 @@ footer {
 }
 
 .header-container {
-  position: relative;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  gap: 24px;
-  padding: 1.5rem 1rem 1rem 1rem;
-  text-align: left;
+  align-items: center; /* vertically center image & text */
+  gap: 20px;
   justify-content: flex-start;
-  flex-wrap: wrap;
-  z-index: 2;
+  text-align: left;
 }
 
 .profile-pic {
-  width: 120px;
-  height: 120px;
+  width: 100px; /* smaller size */
+  height: 100px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #f4a261; /* highlight color */
+  border: 3px solid #f4a261;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-right: 0;
-  margin-left: 0;
 }
 
 .intro-text {
