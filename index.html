@@ -7,8 +7,16 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
- <header class="header-container" style="position:relative;z-index:2;">
-  <img src="jeypeg.jpeg" alt="Me" class="profile-pic" />
+<header class="header-container" style="position:relative;z-index:2;">
+  <div class="profile-pic-wrapper">
+    <img src="jeypeg.jpeg" alt="Me" class="profile-pic" />
+    <div class="level-container">
+      <span id="level-label"></span>
+      <div class="level-bar">
+        <div id="level-progress"></div>
+      </div>
+    </div>
+  </div>
   <div class="intro-text">
     <h1>Davis Blaze</h1>
     <p>System Administrator | QA Engineer | IT Enthusiast</p>
@@ -183,5 +191,33 @@
   <footer>
     <p>© 2025 Dave. Built with HTML & CSS.</p>
   </footer>
+  <script>
+  const birthDate = new Date("1999-06-15"); // Change to your birthday
+  const today = new Date();
+
+  // Calculate age
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const hasHadBirthdayThisYear =
+    today.getMonth() > birthDate.getMonth() ||
+    (today.getMonth() === birthDate.getMonth() && today.getDate() >= birthDate.getDate());
+
+  if (!hasHadBirthdayThisYear) {
+    age--;
+  }
+
+  // Calculate progress toward next birthday
+  const lastBirthday = new Date(today.getFullYear(), birthDate.getMonth(), birthDate.getDate());
+  if (!hasHadBirthdayThisYear) lastBirthday.setFullYear(today.getFullYear() - 1);
+
+  const nextBirthday = new Date(lastBirthday);
+  nextBirthday.setFullYear(lastBirthday.getFullYear() + 1);
+
+  const progress =
+    ((today - lastBirthday) / (nextBirthday - lastBirthday)) * 100;
+
+  // Update DOM
+  document.getElementById("level-label").textContent = `Level ${age}`;
+  document.getElementById("level-progress").style.width = `${progress}%`;
+</script>
 </body>
 </html>
