@@ -444,3 +444,36 @@ footer {
   user-select: none;
   pointer-events: none;
 }
+
+.profile-pic-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.level-container {
+  width: 150px;
+  text-align: center;
+}
+
+#level-label {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.level-bar {
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 12px;
+}
+
+#level-progress {
+  background-color: #f4a261;
+  height: 100%;
+  width: 0%; /* will be set by JS */
+  transition: width 0.6s ease;
+}
