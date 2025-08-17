@@ -7,194 +7,208 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header class="header-container">
-  <div class="profile-pic-wrapper">
-    <img src="jeypeg.jpeg" alt="Me" class="profile-pic" />
-    <div class="level-container">
-      <span id="level-label"></span>
-      <div class="level-bar">
-        <div id="level-progress"></div>
+  <!-- Header -->
+  <header class="header-container">
+    <div class="profile-pic-wrapper">
+      <img src="jeypeg.jpeg" alt="Me" class="profile-pic" />
+      <div class="level-container">
+        <span id="level-label"></span>
+        <div class="level-bar">
+          <div id="level-progress"></div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="intro-text">
-    <h1>Davis Blaze</h1>
-    <p>System Administrator | QA Engineer | IT Enthusiast</p>
+    <div class="intro-text">
+      <h1>Davis Blaze</h1>
+      <p>System Administrator | QA Engineer | IT Enthusiast</p>
+    </div>
     <div class="header-buttons">
-      <button class="open-modal" data-modal="aboutMeModal">About Me</button>
-      <button class="open-modal" data-modal="projectsModal">My Projects</button>
-      <button class="open-modal" data-modal="achievementsModal">Achievements</button>
+      <button class="open-modal" data-modal="about">About Me</button>
+      <button class="open-modal" data-modal="projects">My Projects</button>
+      <button class="open-modal" data-modal="achievements">Achievements</button>
     </div>
-  </div>
-</header>
+  </header>
 
-<!-- About Me Modal -->
-<div id="aboutMeModal" class="modal">
-  <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <h2>About Me</h2>
-    <p>
-      Hi! I’m <strong>Davis Blaze</strong>, an IT professional passionate about solving technical challenges, brainstorming new ideas, and learning new technologies.
-    </p>
-  </div>
-</div>
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
 
-<!-- My Projects Modal -->
-<div id="projectsModal" class="modal">
-  <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <h2>My Projects</h2>
-    <p>Coming soon...</p>
-  </div>
-</div>
-
-<!-- Achievements Modal -->
-<div id="achievementsModal" class="modal">
-  <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <h2>Achievements</h2>
-    <p>Coming soon...</p>
-  </div>
-</div>
-
-<section class="about-card" aria-labelledby="about-heading">
-  <h2 id="about-heading">About Me</h2>
-  <div class="about-content">
-    <div class="about-image-wrapper">
-      <img src="images.jfif" alt="Davis Blaze portrait" class="about-image" />
+    <div class="job job-flex">
+      <div class="job-desc">
+        <h3>Computer System Administrator</h3>
+        <p><strong><a href="https://digitalaiscentrs.lv/">Ventspils Digital Center</a></strong> – Latvia</p>
+        <p>2023 - 2024</p>
+        <ul>
+          <li>Handled damage reports and change requests, consulting users via platforms, phone, and in person.</li>
+          <li>Performed remote diagnostics and troubleshooting of technical issues.</li>
+          <li>Maintained workstations and office equipment.</li>
+          <li>Managed Active Directory accounts and system updates.</li>
+        </ul>
+      </div>
+      <div class="job-skills-box">
+        <h4>Key Skills</h4>
+        <ul>
+          <li>Windows Server Administration</li>
+          <li>Active Directory Management</li>
+          <li>Remote Troubleshooting</li>
+          <li>User Support & Consultation</li>
+          <li>Hardware & Software Maintenance</li>
+          <li>Network Diagnostics</li>
+        </ul>
+      </div>
     </div>
-    <div class="about-text">
+
+    <div class="job job-flex">
+      <div class="job-desc">
+        <h3>Quality Assurance Engineer</h3>
+        <p><strong><a href="https://www.testdevlab.com/">TestDevLab</a></strong> – Latvia</p>
+        <p>2021 - 2023</p>
+        <ul>
+          <li>Created test plans and provided feedback on bugs and issues.</li>
+          <li>Conducted software testing and suggested improvements.</li>
+          <li>Worked on high-profile projects focused on audio/video quality testing.</li>
+        </ul>
+      </div>
+      <div class="job-skills-box">
+        <h4>Key Skills</h4>
+        <ul>
+          <li>Manual Software Testing</li>
+          <li>Bug Reporting & Documentation</li>
+          <li>Audio/Video Quality Analysis</li>
+          <li>Defect Tracking Tools (e.g., JIRA)</li>
+          <li>Cross-Platform Testing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job job-flex">
+      <div class="job-desc">
+        <h3><a href="https://www.ventspilstehnikums.lv/">Intern – Ventspils Technical School</a></h3>
+        <p><strong>Latvia</strong></p>
+        <p>2016 - 2020</p>
+        <ul>
+          <li>Installed and configured computer networks.</li>
+          <li>Handled data analysis using MS Office 365.</li>
+          <li>Worked with 3D modeling, video editing, and PC maintenance.</li>
+        </ul>
+      </div>
+      <div class="job-skills-box">
+        <h4>Key Skills</h4>
+        <ul>
+          <li>Network Installation & Configuration</li>
+          <li>3D Modeling Basics</li>
+          <li>Video Editing Fundamentals</li>
+          <li>PC Assembly & Maintenance</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job job-flex">
+      <div class="job-desc">
+        <h3><a href="https://www.vatp.lv/en/home">Intern – High Technology Park</a></h3>
+        <p><strong>Latvia</strong></p>
+        <p>2017 - 2018</p>
+        <ul>
+          <li>Managed computer systems</li>
+          <li>Contributed to improving network infrastructure</li>
+          <li>Resolving various computer system-related issues</li>
+        </ul>
+      </div>
+      <div class="job-skills-box">
+        <h4>Key Skills</h4>
+        <ul>
+          <li>Network Infrastructure Support</li>
+          <li>System Monitoring & Management</li>
+          <li>Troubleshooting Network Issues</li>
+          <li>Technical Documentation</li>
+          <li>Collaboration with IT Teams</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section id="timeline">
+    <h2>Career Timeline</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">2023 - 2024</div>
+        <div class="timeline-content">
+          <strong>Computer System Administrator – Ventspils Digital Center</strong><br>
+          Damage reports, diagnostics, troubleshooting, AD management, system updates.
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2021 - 2023</div>
+        <div class="timeline-content">
+          <strong>Quality Assurance Engineer – TestDevLab</strong><br>
+          Test plans, bug feedback, software testing, audio/video quality projects.
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2017 - 2018</div>
+        <div class="timeline-content">
+          <strong>Intern – High Technology Park</strong><br>
+          Managed computer systems, improved network infrastructure, resolved system issues.
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2016 - 2020</div>
+        <div class="timeline-content">
+          <strong>Intern – Ventspils Technical School</strong><br>
+          Installed and configured computer networks, data analysis, 3D modeling, video editing, PC maintenance.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Email: davisbl4ze@gmail.com</strong></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/davis-blaze-3298a721a/">LinkedIn</a></p>
+    <p>GitHub: <a href="https://github.com/wnabepr0grammer">GitHub</a></p>
+    <p>Facebook: <a href="https://www.facebook.com/davis.blaze">Facebook</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Dave. Built with HTML, CSS & JS.</p>
+  </footer>
+
+  <!-- Modal Templates -->
+  <div id="modal-overlay"></div>
+
+  <div id="about" class="modal">
+    <div class="modal-content">
+      <h2>About Me</h2>
       <p>
-        Hi! I’m <strong>Davis Blaze</strong>, an IT professional passionate about <span class="highlight">solving technical challenges</span>, <span class="highlight">brainstorming new ideas</span>, and <span class="highlight">learning new technologies</span>.
+        Hi! I’m <strong>Davis Blaze</strong>, an IT professional passionate about
+        solving technical challenges, brainstorming new ideas, and learning new
+        technologies. I enjoy tackling complex technical problems and delivering
+        efficient solutions. Over the years, I have gained experience working with
+        users and teams to ensure smooth IT operations and high-quality software products.
       </p>
       <p>
-        Outside work, I enjoy <em>weightlifting</em>, <em>calisthenics</em>, and <em>cardio training</em>.
+        When I’m not behind a screen, I’m likely exploring my body capabilities
+        doing <em>weightlifting</em>, <em>calisthenics</em>, and <em>grueling cardio</em>.
       </p>
     </div>
   </div>
-</section>
 
-<section id="experience">
-  <h2>Experience</h2>
-  <div class="job job-flex">
-    <div class="job-desc">
-      <h3>Computer System Administrator</h3>
-      <p><strong><a href="https://digitalaiscentrs.lv/">Ventspils Digital Center</a></strong> – Latvia</p>
-      <p>2023 - 2024</p>
-      <ul>
-        <li>Handled damage reports and change requests.</li>
-        <li>Performed remote diagnostics and troubleshooting.</li>
-        <li>Maintained workstations and office equipment.</li>
-        <li>Managed Active Directory accounts and system updates.</li>
-      </ul>
-    </div>
-    <div class="job-skills-box">
-      <h4>Key Skills</h4>
-      <ul>
-        <li>Windows Server Administration</li>
-        <li>Active Directory Management</li>
-        <li>Remote Troubleshooting</li>
-        <li>User Support & Consultation</li>
-        <li>Hardware & Software Maintenance</li>
-        <li>Network Diagnostics</li>
-      </ul>
+  <div id="projects" class="modal">
+    <div class="modal-content">
+      <h2>My Projects</h2>
+      <p>🚧 Work in progress. This section will showcase my projects in the future.</p>
     </div>
   </div>
 
-  <div class="job job-flex">
-    <div class="job-desc">
-      <h3>Quality Assurance Engineer</h3>
-      <p><strong><a href="https://www.testdevlab.com/">TestDevLab</a></strong> – Latvia</p>
-      <p>2021 - 2023</p>
-      <ul>
-        <li>Created test plans and provided feedback on bugs.</li>
-        <li>Conducted software testing and suggested improvements.</li>
-        <li>Worked on audio/video quality testing projects.</li>
-      </ul>
-    </div>
-    <div class="job-skills-box">
-      <h4>Key Skills</h4>
-      <ul>
-        <li>Manual Software Testing</li>
-        <li>Bug Reporting & Documentation</li>
-        <li>Audio/Video Quality Analysis</li>
-        <li>Defect Tracking Tools (JIRA)</li>
-        <li>Cross-Platform Testing</li>
-      </ul>
+  <div id="achievements" class="modal">
+    <div class="modal-content">
+      <h2>Achievements</h2>
+      <p>🚧 Placeholder for achievements like certifications, awards, or milestones.</p>
     </div>
   </div>
-</section>
 
-<section id="timeline">
-  <h2>Career Timeline</h2>
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="timeline-year">2023 - 2024</div>
-      <div class="timeline-lane"></div>
-      <div class="timeline-content">Computer System Administrator – Ventspils Digital Center</div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-year">2021 - 2023</div>
-      <div class="timeline-lane"></div>
-      <div class="timeline-content">Quality Assurance Engineer – TestDevLab</div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-year">2017 - 2018</div>
-      <div class="timeline-lane"></div>
-      <div class="timeline-content">Intern – High Technology Park</div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-year">2016 - 2020</div>
-      <div class="timeline-lane"></div>
-      <div class="timeline-content">Intern – Ventspils Technical School</div>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p><strong>Email:</strong> davisbl4ze@gmail.com</p>
-  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/davis-blaze-3298a721a/">Link</a></p>
-  <p><strong>GitHub:</strong> <a href="https://github.com/wnabepr0grammer">Link</a></p>
-</section>
-
-<footer>
-  <p>© 2025 Dave. Built with HTML & CSS.</p>
-</footer>
-
-<script src="script.js"></script>
-<script>
-  // Age & Level Progress
-  const birthDate = new Date("2000-10-02");
-  const today = new Date();
-  let age = today.getFullYear() - birthDate.getFullYear();
-  const hasHadBirthdayThisYear = today.getMonth() > birthDate.getMonth() || (today.getMonth() === birthDate.getMonth() && today.getDate() >= birthDate.getDate());
-  if (!hasHadBirthdayThisYear) age--;
-  const lastBirthday = new Date(today.getFullYear(), birthDate.getMonth(), birthDate.getDate());
-  if (!hasHadBirthdayThisYear) lastBirthday.setFullYear(today.getFullYear() - 1);
-  const nextBirthday = new Date(lastBirthday);
-  nextBirthday.setFullYear(lastBirthday.getFullYear() + 1);
-  const progress = ((today - lastBirthday) / (nextBirthday - lastBirthday)) * 100;
-  document.getElementById("level-label").textContent = `Level ${age}`;
-  document.getElementById("level-progress").style.width = `${progress}%`;
-
-  // Modal JS
-  document.querySelectorAll(".open-modal").forEach(button => {
-    button.addEventListener("click", () => {
-      const modalId = button.getAttribute("data-modal");
-      document.getElementById(modalId).style.display = "block";
-    });
-  });
-  document.querySelectorAll(".close-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      btn.closest(".modal").style.display = "none";
-    });
-  });
-  window.addEventListener("click", event => {
-    if (event.target.classList.contains("modal")) {
-      event.target.style.display = "none";
-    }
-  });
-</script>
+  <script src="script.js"></script>
 </body>
 </html>
